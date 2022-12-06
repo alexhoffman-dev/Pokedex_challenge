@@ -8,7 +8,7 @@ typeFilter.forEach((filter) => filter.addEventListener('click', filterPokemon));
 // Use a for loop to append i to the PokeAPI URL to cycle through
 // vanilla pokemon (1-150) and return an array of objects representing
 // each pokemon and the key value pairs we need
-
+// here is a new note
 
 async function pokedexSetup() {
     await getPokemon();
