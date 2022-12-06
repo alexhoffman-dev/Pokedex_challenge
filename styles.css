@@ -36,7 +36,7 @@ label {
     display:grid;
     grid-template-columns:repeat(auto-fill, minmax(200px, 5fr));
     gap: 5px;
-    margin: 5px 15px 5px 17px;
+    margin: -30px 15px 5px 17px;
     border: solid 2px black;
     height: 770px;
     overflow: scroll;
@@ -56,10 +56,47 @@ label {
     border:3px solid goldenrod;
     opacity: 90%;
 }
+
+.filterMenuContainer{
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    background-color: slategray;
+    opacity: 90%;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Pokemon-gameboy-font;
+    font-size: 12px;
+    border: 2px solid black;
+    position: relative; 
+    top: -40px;
+    left: 1270px;
+}
+.filterMenuContainer:hover {
+    background-color: rgb(70, 81, 92);
+}
+.filterMenuContainer:hover ul {
+    display:block;
+}
+.filterMenuContainer ul {
+    display:none;
+    padding: 5px;
+    position: absolute;
+    cursor:-webkit-grab;
+    right: -20px;
+}
+.filterType {
+    width: 120px;
+    height: 25px;
+    padding-top:5px;
+    opacity: 100%;
+    margin:1px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
 .hidden {
     display:none !important;
 }
-
 .space {
     margin: 10px;
     height: 65px;
