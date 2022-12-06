@@ -1,0 +1,14 @@
+{
+  "name": "tic-tac-toe-coding-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
+}

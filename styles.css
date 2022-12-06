@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+  }
+@font-face {
+    font-family: Pokemon-gameboy-font;
+    src: url(Pokemon-gameboy-font.ttf);
+}
+@font-face {
+    font-family: Pokemon-title-font;
+    src: url(Pokemon-Solid.ttf);
+}
+body {
+    background-image: url(pokedex-layout.png);
+    background-color: whitesmoke;
+    height: 100%;
+}
+h1 {
+    text-align: center;
+    font-family: Pokemon-title-font;
+    font-size: 60px;
+    margin: 55px 0 20px 0;
+    color:gold;
+    text-shadow: 10px 10px 20px black;
+}
+ul {
+    list-style: none
+}
+label {
+    font-family: Pokemon-gameboy-font;
+    font-size: 12.5px;
+}
+#searchBarContainer {
+    margin: 50px 0 0 60px;
+}
+.pokedex-container {
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px, 5fr));
+    gap: 5px;
+    margin: 5px 15px 5px 17px;
+    border: solid 2px black;
+    height: 770px;
+    overflow: scroll;
+    justify-items: start;
+    }
+.cell {
+    border: 3px solid;
+    margin: 5px;
+    border-color:black;
+    font-family:Pokemon-gameboy-font;
+    font-size: 12.5px;
+    text-align: left;
+    word-wrap: normal;
+    max-height: 300px;
+}
+.cell:hover {
+    border:3px solid goldenrod;
+    opacity: 90%;
+}
+.hidden {
+    display:none !important;
+}
+
+.space {
+    margin: 10px;
+    height: 65px;
+}
