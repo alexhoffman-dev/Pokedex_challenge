@@ -95,7 +95,7 @@ function searchPokedex(event) {
 
 function filterPokemon(event) {
     let filterClick = event.target.innerHTML.toLowerCase();    
-    // I want to use the inner HTML of the targetted filter to iterate through the created DOM elements and only display
+    // Here we use the inner HTML of the targetted filter to iterate through the created DOM elements and only display
     // pokemon with matching types. 
     let pokemonTypes = document.querySelectorAll('.cell');
     for(let i = 0; i < pokemonObjects.length; i++) {
