@@ -100,7 +100,7 @@ function filterPokemon(event) {
     let pokemonTypes = document.querySelectorAll('.cell');
     for(let i = 0; i < pokemonObjects.length; i++) {
         let eachType = pokemonTypes[i].getElementsByTagName('li')[2].innerText.slice(7);
-        if(eachType.indexOf(filterClick) > -1) {
+        if(eachType.indexOf(filterClick) > -1 || filterClick === 'reset') {
             pokemonTypes[i].classList.remove('hidden');
         } else {
             pokemonTypes[i].classList.add('hidden');
